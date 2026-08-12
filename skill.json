@@ -1,0 +1,32 @@
+{
+  "name": "genpark-ai-agent-observability-telemetry-monitor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time AI agent execution observability, token tracing & tool call error monitoring.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "ai-observability",
+    "agent-telemetry",
+    "token-tracing",
+    "tool-call-monitor",
+    "ph-august12"
+  ],
+  "inputs": {
+    "agent_session_logs": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "total_token_usage": {
+      "type": "integer"
+    },
+    "tool_error_rate_pct": {
+      "type": "number"
+    },
+    "latency_p95_ms": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
